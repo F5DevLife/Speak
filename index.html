@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>repl.it</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -20,7 +20,12 @@
 		        </div>
 		        <div>
 		            <label for="voice">Voice</label>
-		            <input type="number" min="0" max="6" value="4" id="voice">
+                    <select name="gender" id="gender">
+                        <option label="female" value="female"></option>
+                        <option label="male" value="male"></option>
+                        <option label="not listed" value="[not listed]"></option>
+                    </select>
+		            <input type="number" min="1" max="10" value="4" id="voice" maxlength="2">
 		            
 		        </div>
 		

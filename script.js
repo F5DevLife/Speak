@@ -1,8 +1,14 @@
 const $ = (q) => document.querySelector(q)
 const text = $("#text")
 
+const genderSelection = $("#gender")
+
+
 const resetButton = $("#reset")
+
+
 const voiceSelection = $("#voice")
+
 
 const femaleVoiceIndexes = [2, 3, 4, 5, 7, 8, 9]
 
@@ -16,6 +22,9 @@ window.addEventListener("keydown", function (event) {
         }
 })
 
+genderSelection.addEventListener("change", function() {
+    console.log(`Changed voice gender to ${genderSelection.value}.`);
+})
 
 function resetText() {
     text.value = ""
